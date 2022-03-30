@@ -1,1 +1,5 @@
-{}
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/tundera/code/opensource/maintaining/templates/chakra-suspense/.github/workflows/build.yml"
+  }
+}
