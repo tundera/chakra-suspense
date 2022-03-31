@@ -43,7 +43,7 @@ function Navbar() {
       width='full'
       borderBottom='2px'
       borderBottomColor='blackAlpha.500'
-      bg='whiteAlpha.800'
+      bg='background'
       px='4'
       py='1'
       color='black'
@@ -51,7 +51,7 @@ function Navbar() {
       backdropBlur='md'
       _dark={{
         borderBottomColor: 'whiteAlpha.200',
-        bg: 'blackAlpha.800',
+        bg: 'background',
         color: 'white',
       }}
     >

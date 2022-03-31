@@ -30,7 +30,14 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Stack spacing='8'>
+      <Stack
+        spacing='8'
+        py={{ base: '0', sm: '8' }}
+        px={{ base: '4', sm: '10' }}
+        bg={useBreakpointValue({ base: 'transparent', sm: 'background' })}
+        boxShadow={{ base: 'none', sm: useColorModeValue('md', 'md-dark') }}
+        borderRadius={{ base: 'none', sm: 'xl' }}
+      >
         <Stack spacing='6'>
           <Logo />
           <Stack spacing={{ base: '2', md: '3' }} textAlign='center'>
@@ -45,13 +52,7 @@ const Home: NextPage = () => {
             </HStack>
           </Stack>
         </Stack>
-        <Box
-          py={{ base: '0', sm: '8' }}
-          px={{ base: '4', sm: '10' }}
-          bg={useBreakpointValue({ base: 'transparent', sm: 'bg-surface' })}
-          boxShadow={{ base: 'none', sm: useColorModeValue('md', 'md-dark') }}
-          borderRadius={{ base: 'none', sm: 'xl' }}
-        >
+        <Box>
           <Stack spacing='6'>
             <Stack spacing='5'>
               <FormControl>
