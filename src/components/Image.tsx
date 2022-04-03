@@ -25,14 +25,17 @@ const Image = (props: ImageProps) => {
     blurDataURL,
     shimmer,
     css,
+    inset,
     ...rest
   } = props
   return (
-    <Box cursor='pointer'>
+    <Box {...rest}>
       <ChakraImage
+        src={src}
+        alt={alt}
         loader={loader}
-        width={width}
         quality={quality}
+        width={width}
         height={height}
         placeholder={shimmer ? 'blur' : placeholder}
         blurDataURL={
@@ -40,12 +43,6 @@ const Image = (props: ImageProps) => {
             ? `data:image/svg+xml;base64,${bufferToBase64(createShimmer({ width, height }))}`
             : blurDataURL
         }
-        src={src}
-        alt={alt}
-        transition='all 0.2s'
-        _groupHover={{
-          transform: 'scale(1.05)',
-        }}
         {...rest}
       />
     </Box>

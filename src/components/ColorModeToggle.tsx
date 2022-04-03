@@ -8,11 +8,11 @@ function ColorModeToggle() {
   return (
     <Button
       display='flex'
-      height='8'
       width='8'
       alignItems='center'
       justifyContent='center'
       rounded='lg'
+      variant='ghost'
       aria-label='Toggle Dark Mode'
       onClick={toggleColorMode}
     >

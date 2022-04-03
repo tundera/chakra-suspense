@@ -26,6 +26,10 @@ const links = [
     text: 'About',
     url: '/about',
   },
+  {
+    text: 'Demo',
+    url: '/demo',
+  },
 ]
 
 const MobileMenu = ({ isOpen, onClose }: Props) => {

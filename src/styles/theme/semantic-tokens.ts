@@ -8,6 +8,10 @@ const tokens: SemanticTokens = {
       default: 'white',
       _dark: 'black',
     },
+    surface: {
+      default: 'white',
+      _dark: 'blackAlpha.900',
+    },
   },
 }
 

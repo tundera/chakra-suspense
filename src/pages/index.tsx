@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   return (
     <Container as='main' maxW='lg' py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }}>
       <Head>
-        <title>Chakra UI + Next.js</title>
+        <title>Chakra UI + Next.js | Home</title>
         <meta name='description' content='Starter template for Chakra UI + Next.js' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -34,8 +34,8 @@ const Home: NextPage = () => {
         spacing='8'
         py={{ base: '0', sm: '8' }}
         px={{ base: '4', sm: '10' }}
-        bg={useBreakpointValue({ base: 'transparent', sm: 'background' })}
-        boxShadow={{ base: 'none', sm: useColorModeValue('md', 'md-dark') }}
+        bg={useBreakpointValue({ base: 'transparent', sm: 'surface' })}
+        boxShadow={{ base: 'none', sm: useColorModeValue('md', 'xl') }}
         borderRadius={{ base: 'none', sm: 'xl' }}
       >
         <Stack spacing='6'>

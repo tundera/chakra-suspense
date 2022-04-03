@@ -27,6 +27,10 @@ const links = [
     text: 'About',
     url: '/about',
   },
+  {
+    text: 'Demo',
+    url: '/demo',
+  },
 ]
 
 function Navbar() {
@@ -39,7 +43,7 @@ function Navbar() {
     <chakra.header
       position='sticky'
       top='0'
-      zIndex='10'
+      zIndex={20}
       width='full'
       borderBottom='2px'
       borderBottomColor='blackAlpha.500'
@@ -101,6 +105,7 @@ function Navbar() {
                   rounded='lg'
                   px='4'
                   py='2'
+                  variant='ghost'
                   fontSize='sm'
                   fontWeight='medium'
                   onClick={() => signOut()}
@@ -116,6 +121,7 @@ function Navbar() {
                 py='2'
                 fontSize='sm'
                 fontWeight='medium'
+                variant='ghost'
                 onClick={() => signIn()}
                 disabled={status === 'loading'}
               >
@@ -152,6 +158,7 @@ function Navbar() {
           <Button
             aria-label='Open navigation menu'
             px='2'
+            variant='ghost'
             _hover={{ bg: 'gray.100', _dark: { bg: 'whiteAlpha.200' } }}
             _active={{ bg: 'gray.200', _dark: { bg: 'whiteAlpha.300' } }}
             onClick={onOpen}
