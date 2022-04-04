@@ -1,6 +1,8 @@
 import { setupServer } from 'msw/node'
 
-const server = setupServer()
+import { authHandlers } from './auth'
+
+const server = setupServer(...authHandlers)
 
 server.listen({ onUnhandledRequest: 'warn' })
 console.info('🔶 Mock server running')

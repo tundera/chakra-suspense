@@ -1,5 +1,5 @@
+import { lazy } from 'react'
 import { Box, Button, chakra, Flex, Icon, useDisclosure } from '@chakra-ui/react'
-import dynamic from 'next/dynamic'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { signIn, signOut, useSession } from 'next-auth/react'
@@ -16,7 +16,7 @@ const NavLogo = () => (
   </svg>
 )
 
-const MobileMenu = dynamic(() => import('src/components/MobileMenu'), { suspense: true })
+const MobileMenu = lazy(() => import('src/components/MobileMenu'))
 
 const links = [
   {

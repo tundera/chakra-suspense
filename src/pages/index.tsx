@@ -4,7 +4,6 @@ import {
   Box,
   Button,
   Checkbox,
-  Container,
   Divider,
   FormControl,
   FormLabel,
@@ -23,7 +22,7 @@ import { PasswordField } from 'src/components/PasswordField'
 
 const Home: NextPage = () => {
   return (
-    <Container as='main' maxW='lg' py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }}>
+    <>
       <Head>
         <title>Chakra UI + Next.js | Home</title>
         <meta name='description' content='Starter template for Chakra UI + Next.js' />
@@ -81,7 +80,7 @@ const Home: NextPage = () => {
           </Stack>
         </Box>
       </Stack>
-    </Container>
+    </>
   )
 }
 

@@ -1,6 +1,5 @@
-import { Box, Flex } from '@chakra-ui/react'
-import dynamic from 'next/dynamic'
-import { type ReactNode } from 'react'
+import { Box, Flex, Container } from '@chakra-ui/react'
+import { lazy, type ReactNode } from 'react'
 
 import Footer from 'src/components/Footer'
 import Navbar from 'src/components/Navbar'
@@ -17,7 +16,14 @@ export default function MainLayout({ children }: MainLayoutProps) {
         <Flex direction='column' minHeight='100vh' width='full'>
           <Navbar />
           <Flex flex={1} direction='column' align='center' justify='center'>
-            {children}
+            <Container
+              as='main'
+              maxW='lg'
+              py={{ base: '12', md: '24' }}
+              px={{ base: '0', sm: '8' }}
+            >
+              {children}
+            </Container>
           </Flex>
         </Flex>
         <Footer />
@@ -27,7 +33,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
 }
 
 export const getLayout: GetLayoutFunction = (page) => {
-  const Layout = dynamic(() => import('src/layouts/main'), { suspense: false })
+  const Layout = lazy(() => import('src/layouts/main'))
 
   return <Layout>{page}</Layout>
 }

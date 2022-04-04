@@ -2,10 +2,10 @@
   "name": "chakra-suspense",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@7.0.0-beta.2",
+  "packageManager": "pnpm@7.0.0-rc.2",
   "prisma": {
     "schema": "db/schema.prisma",
-    "seed": "tsno -r tsconfig-paths/register scripts/seed.ts"
+    "seed": "esno -r tsconfig-paths/register scripts/seed.ts"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development binode --require ./mocks -- next dev",
@@ -64,6 +64,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-chakra-ui": "0.6.3",
     "eslint-plugin-prettier": "4.0.0",
+    "esno": "0.14.1",
     "gacp": "2.10.2",
     "husky": "7.0.4",
     "jsdom": "19.0.0",
@@ -76,7 +77,6 @@
     "tasuku": "1.0.2",
     "ts-node": "10.7.0",
     "tsconfig-paths": "3.14.1",
-    "tsno": "2.0.0",
     "typescript": "4.6.3",
     "vite-tsconfig-paths": "3.4.1",
     "vitest": "0.8.2"
