@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           </Stack>
         </Stack>
         <Box>
-          <Stack spacing='6'>
+          <Stack spacing='6' as='form'>
             <Stack spacing='5'>
               <FormControl>
                 <FormLabel htmlFor='email'>Email</FormLabel>
