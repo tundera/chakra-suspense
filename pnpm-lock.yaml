@@ -9,13 +9,13 @@ specifiers:
   '@commitlint/config-conventional': 16.2.1
   '@emotion/react': 11.8.2
   '@emotion/styled': 11.8.1
-  '@faker-js/faker': 6.1.1
+  '@faker-js/faker': 6.1.2
   '@fontsource/fira-code': 4.5.8
   '@fontsource/inter': 4.5.7
   '@next-auth/prisma-adapter': 1.0.3
   '@prisma/client': 3.11.1
   '@testing-library/cypress': 8.0.2
-  '@testing-library/react': 13.0.0-alpha.7
+  '@testing-library/react': 13.0.0
   '@testing-library/react-hooks': 8.0.0-alpha.1
   '@testing-library/user-event': 14.0.4
   '@types/eslint': 8.4.1
@@ -30,7 +30,7 @@ specifiers:
   cross-env: 7.0.3
   cypress: 9.5.3
   eslint: 8.12.0
-  eslint-config-next: 12.1.2
+  eslint-config-next: 12.1.4
   eslint-config-prettier: 8.5.0
   eslint-plugin-chakra-ui: 0.6.3
   eslint-plugin-prettier: 4.0.0
@@ -57,7 +57,7 @@ specifiers:
   tsconfig-paths: 3.14.1
   typescript: 4.6.3
   vite-tsconfig-paths: 3.4.1
-  vitest: 0.8.2
+  vitest: 0.8.4
 
 dependencies:
   '@chakra-ui/react': 1.8.7_e03537af37383640dec0316010e75b7b
@@ -79,11 +79,11 @@ devDependencies:
   '@chakra-ui/cli': 1.9.0_ee885bc7281b682b6adbed6ae09ee090
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@faker-js/faker': 6.1.1
+  '@faker-js/faker': 6.1.2
   '@fontsource/fira-code': 4.5.8
   '@fontsource/inter': 4.5.7
   '@testing-library/cypress': 8.0.2_cypress@9.5.3
-  '@testing-library/react': 13.0.0-alpha.7_react-dom@18.0.0+react@18.0.0
+  '@testing-library/react': 13.0.0_react-dom@18.0.0+react@18.0.0
   '@testing-library/react-hooks': 8.0.0-alpha.1_react-dom@18.0.0+react@18.0.0
   '@testing-library/user-event': 14.0.4
   '@types/eslint': 8.4.1
@@ -98,7 +98,7 @@ devDependencies:
   cross-env: 7.0.3
   cypress: 9.5.3
   eslint: 8.12.0
-  eslint-config-next: 12.1.2_ede20aa4a76ca7d6860be999bd93d6fa
+  eslint-config-next: 12.1.4_ede20aa4a76ca7d6860be999bd93d6fa
   eslint-config-prettier: 8.5.0_eslint@8.12.0
   eslint-plugin-chakra-ui: 0.6.3_eslint@8.12.0+typescript@4.6.3
   eslint-plugin-prettier: 4.0.0_f2c91d0f54113167d2bd9214a5ab5a36
@@ -118,7 +118,7 @@ devDependencies:
   tsconfig-paths: 3.14.1
   typescript: 4.6.3
   vite-tsconfig-paths: 3.4.1
-  vitest: 0.8.2_c8@7.11.0+jsdom@19.0.0
+  vitest: 0.8.4_c8@7.11.0+jsdom@19.0.0
 
 packages:
   /@ampproject/remapping/2.1.2:
@@ -2152,12 +2152,12 @@ packages:
       - supports-color
     dev: true
 
-  /@faker-js/faker/6.1.1:
+  /@faker-js/faker/6.1.2:
     resolution:
       {
-        integrity: sha512-8yq1LJVGn4GY06riLddIU1LbJm15yjt46hjfkpWNpH/mqdciPOBVzicKOJxzQNrGgVHVBxcdm7sgwjI/Y19MYw==,
+        integrity: sha512-QSvmexHCxeRUk1/yKmoEDaWB5Hohjvtim5g2JJwy8S/l0L4b3y/GxSpE6vN4SBoVGGahEQW21uqyRr7EofI35A==,
       }
-    engines: { node: '>=14.0.0', npm: '>=7.0.0' }
+    engines: { node: '>=14.0.0', npm: '>=6.0.0' }
     dev: true
 
   /@fontsource/fira-code/4.5.8:
@@ -2292,10 +2292,10 @@ packages:
       }
     dev: false
 
-  /@next/eslint-plugin-next/12.1.2:
+  /@next/eslint-plugin-next/12.1.4:
     resolution:
       {
-        integrity: sha512-XqYRh6d98dpv2ynoOEC3VeNv99hxRGBuanRDKASfntdAZD9Zp4n+AugmNF0qwOQEHYgG1uvZW3A4Fi6Y/+kCQw==,
+        integrity: sha512-BRy565KVK6Cdy8LHaHTiwctLqBu/RT84RLpESug70BDJzBlV8QBvODyx/j7wGhvYqp9kvstM05lyb6JaTkSCcQ==,
       }
     dependencies:
       glob: 7.1.7
@@ -2691,10 +2691,10 @@ packages:
       react-error-boundary: 3.1.4_react@18.0.0
     dev: true
 
-  /@testing-library/react/13.0.0-alpha.7_react-dom@18.0.0+react@18.0.0:
+  /@testing-library/react/13.0.0_react-dom@18.0.0+react@18.0.0:
     resolution:
       {
-        integrity: sha512-8Y1PvFczthSeow1WZ0Cq6WbOzpVGLGyEQTr+lL6BwXqAf2IykVY8ZN8V21Ch1cTlbZuZJI5UV3gOyrOHrw9YZQ==,
+        integrity: sha512-p0lYA1M7uoEmk2LnCbZLGmHJHyH59sAaZVXChTXlyhV/PRW9LoIh4mdf7tiXsO8BoNG+vN8UnFJff1hbZeXv+w==,
       }
     engines: { node: '>=12' }
     peerDependencies:
@@ -5223,10 +5223,10 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-next/12.1.2_ede20aa4a76ca7d6860be999bd93d6fa:
+  /eslint-config-next/12.1.4_ede20aa4a76ca7d6860be999bd93d6fa:
     resolution:
       {
-        integrity: sha512-nJgSIB5lXoOsS2yY90i5L5ucI1uko+ykhcQkGkydXqs5GdPprY8Y1NKWW3N0OEzQvFyBcf7GHb/ohB21HoeEsg==,
+        integrity: sha512-Uj0jrVjoQbg9qerxRjSHoOOv3PEzoZxpb8G9LYct25fsflP8xIiUq0l4WEu2KSB5owuLv5hie7wSMqPEsHj+bQ==,
       }
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
@@ -5236,7 +5236,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 12.1.2
+      '@next/eslint-plugin-next': 12.1.4
       '@rushstack/eslint-patch': 1.0.8
       '@typescript-eslint/parser': 5.10.1_eslint@8.12.0+typescript@4.6.3
       eslint: 8.12.0
@@ -6635,7 +6635,7 @@ packages:
     engines: { node: '>=12.0.0' }
     dependencies:
       ansi-escapes: 4.3.2
-      chalk: 4.1.1
+      chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-width: 3.0.0
       external-editor: 3.1.0
@@ -10159,10 +10159,10 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.8.2_c8@7.11.0+jsdom@19.0.0:
+  /vitest/0.8.4_c8@7.11.0+jsdom@19.0.0:
     resolution:
       {
-        integrity: sha512-dTFDJl2F3pkWy1tcE3M29LasklhgtP7M88kT7AJcAurX7nCl/eWu1PQeSzjzWQyUbDq2p8jqdoLETd7MDeibcA==,
+        integrity: sha512-1OoAG1+VYkzp4WLCVQFRJX/OKk70rsMIM5H23crfc1wSEnJvHlxgQBS1HPpV/VYmjC8bIInKWhnB4Gaw32MnyQ==,
       }
     engines: { node: '>=v14.16.0' }
     hasBin: true

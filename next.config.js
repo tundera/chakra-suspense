@@ -6,7 +6,7 @@ const nextConfig = {
     serverComponents: true,
   },
   images: {
-    domains: ['images.unsplash.com'],
+    domains: ['images.unsplash.com', 'avatars.githubusercontent.com'],
     formats: ['image/avif', 'image/webp'],
   },
 }
