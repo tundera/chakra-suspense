@@ -26,6 +26,7 @@ specifiers:
   '@vitejs/plugin-react': 1.3.0
   binode: 1.0.5
   c8: 7.11.0
+  catch-safe: 0.1.1
   cross-env: 7.0.3
   cypress: 9.5.3
   eslint: 8.12.0
@@ -34,6 +35,7 @@ specifiers:
   eslint-plugin-chakra-ui: 0.6.3
   eslint-plugin-prettier: 4.0.0
   esno: 0.14.1
+  execa: 6.1.0
   framer-motion: 6.2.8
   gacp: 2.10.2
   husky: 7.0.4
@@ -92,6 +94,7 @@ devDependencies:
   '@vitejs/plugin-react': 1.3.0
   binode: 1.0.5
   c8: 7.11.0
+  catch-safe: 0.1.1
   cross-env: 7.0.3
   cypress: 9.5.3
   eslint: 8.12.0
@@ -100,6 +103,7 @@ devDependencies:
   eslint-plugin-chakra-ui: 0.6.3_eslint@8.12.0+typescript@4.6.3
   eslint-plugin-prettier: 4.0.0_f2c91d0f54113167d2bd9214a5ab5a36
   esno: 0.14.1
+  execa: 6.1.0
   gacp: 2.10.2
   husky: 7.0.4
   jsdom: 19.0.0
@@ -3838,6 +3842,14 @@ packages:
     resolution: { integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw= }
     dev: true
 
+  /catch-safe/0.1.1:
+    resolution:
+      {
+        integrity: sha512-mxiNjgFG4tgD/wiBnTmddQ4bulGIv00kY5Z39IF9OmuoPqBC234L8DdEwgO+dJ6BgRVXOpEdsqCQ4/JsZ+6Vnw==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dev: true
+
   /chai/4.3.6:
     resolution:
       {
@@ -5674,6 +5686,24 @@ packages:
       strip-final-newline: 2.0.0
     dev: true
 
+  /execa/6.1.0:
+    resolution:
+      {
+        integrity: sha512-QVWlX2e50heYJcCPG0iWtf8r0xjEYfz/OYLGDYH+IyjWezzPNxz63qNFOu0l4YftGWuizFVZHHs8PrLU5p2IDA==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      cross-spawn: 7.0.3
+      get-stream: 6.0.1
+      human-signals: 3.0.1
+      is-stream: 3.0.0
+      merge-stream: 2.0.0
+      npm-run-path: 5.1.0
+      onetime: 6.0.0
+      signal-exit: 3.0.7
+      strip-final-newline: 3.0.0
+    dev: true
+
   /executable/4.1.1:
     resolution:
       {
@@ -6479,6 +6509,14 @@ packages:
     engines: { node: '>=10.17.0' }
     dev: true
 
+  /human-signals/3.0.1:
+    resolution:
+      {
+        integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==,
+      }
+    engines: { node: '>=12.20.0' }
+    dev: true
+
   /husky/7.0.4:
     resolution:
       {
@@ -6857,6 +6895,14 @@ packages:
         integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==,
       }
     engines: { node: '>=8' }
+    dev: true
+
+  /is-stream/3.0.0:
+    resolution:
+      {
+        integrity: sha512-LnQR4bZ9IADDRSkvpqMGvt/tEJWclzklNgSw48V5EAaAeDd6qGvN8ei6k5p0tvxSR171VmGyHuTiAOfxAbr8kA==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
     dev: true
 
   /is-string/1.0.7:
@@ -7562,6 +7608,14 @@ packages:
     engines: { node: '>=6' }
     dev: true
 
+  /mimic-fn/4.0.0:
+    resolution:
+      {
+        integrity: sha512-vqiC06CuhBTUdZH+RYl8sFrL096vA45Ok5ISO6sE/Mr1jRbGH4Csnhi8f3wKVl7x8mO4Au7Ir9D3Oyv1VYMFJw==,
+      }
+    engines: { node: '>=12' }
+    dev: true
+
   /mimic-response/1.0.1:
     resolution:
       {
@@ -7850,6 +7904,16 @@ packages:
       path-key: 3.1.1
     dev: true
 
+  /npm-run-path/5.1.0:
+    resolution:
+      {
+        integrity: sha512-sJOdmRGrY2sjNTRMbSvluQqg+8X7ZK61yvzBEIDhz4f8z1TZFYABsqjjCBd/0PUNE9M6QDgHJXQkGUEm7Q+l9Q==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      path-key: 4.0.0
+    dev: true
+
   /nwsapi/2.2.0:
     resolution:
       {
@@ -7969,6 +8033,16 @@ packages:
     engines: { node: '>=6' }
     dependencies:
       mimic-fn: 2.1.0
+    dev: true
+
+  /onetime/6.0.0:
+    resolution:
+      {
+        integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==,
+      }
+    engines: { node: '>=12' }
+    dependencies:
+      mimic-fn: 4.0.0
     dev: true
 
   /openid-client/5.1.4:
@@ -8201,6 +8275,14 @@ packages:
         integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==,
       }
     engines: { node: '>=8' }
+    dev: true
+
+  /path-key/4.0.0:
+    resolution:
+      {
+        integrity: sha512-haREypq7xkM7ErfgIyA0z+Bj4AGKlMSdlQE2jvJo6huWD1EdkKYV+G/T4nq0YEF2vgTT8kqMFKo1uHn950r4SQ==,
+      }
+    engines: { node: '>=12' }
     dev: true
 
   /path-parse/1.0.7:
@@ -9369,6 +9451,14 @@ packages:
         integrity: sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==,
       }
     engines: { node: '>=6' }
+    dev: true
+
+  /strip-final-newline/3.0.0:
+    resolution:
+      {
+        integrity: sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw==,
+      }
+    engines: { node: '>=12' }
     dev: true
 
   /strip-indent/3.0.0:
