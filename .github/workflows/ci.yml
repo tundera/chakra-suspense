@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: 📥 Download deps
-        uses: pnpm/action-setup@v2.1.0
+        uses: pnpm/action-setup@v2.2.1
         with:
           version: 6.32.3
           run_install: true
@@ -63,7 +63,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: 📥 Download deps
-        uses: pnpm/action-setup@v2.1.0
+        uses: pnpm/action-setup@v2.2.1
         with:
           version: 6.32.3
           run_install: true
@@ -95,7 +95,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: 📥 Download deps
-        uses: pnpm/action-setup@v2.1.0
+        uses: pnpm/action-setup@v2.2.1
         with:
           version: 6.32.3
           run_install: true
