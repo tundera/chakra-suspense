@@ -16,15 +16,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   const getLayout = Component.getLayout ?? getMainLayout
 
   return (
-    <ErrorBoundary FallbackComponent={RootErrorFallback}>
-      <Suspense fallback={<FullPageSpinner />}>
-        <SessionProvider session={pageProps.session}>
-          <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme}>
+      <ErrorBoundary FallbackComponent={RootErrorFallback}>
+        <Suspense fallback={<FullPageSpinner />}>
+          <SessionProvider session={pageProps.session}>
             {getLayout(<Component {...pageProps} />, pageProps)}
-          </ChakraProvider>
-        </SessionProvider>
-      </Suspense>
-    </ErrorBoundary>
+          </SessionProvider>
+        </Suspense>
+      </ErrorBoundary>
+    </ChakraProvider>
   )
 }
 

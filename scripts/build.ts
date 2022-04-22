@@ -6,7 +6,7 @@ import { getErrorMessage } from 'catch-safe'
 
 async function main() {
   try {
-    await execa('pnpm', ['prisma', 'generate'], {
+    await execa('yarn', ['prisma', 'generate'], {
       stdio: 'inherit',
       env: {
         NODE_ENV: 'production',
@@ -18,7 +18,7 @@ async function main() {
   }
 
   try {
-    await execa('pnpm', ['prisma', 'migrate', 'deploy'], {
+    await execa('yarn', ['prisma', 'migrate', 'deploy'], {
       stdio: 'inherit',
       env: {
         NODE_ENV: 'production',
@@ -30,7 +30,7 @@ async function main() {
   }
 
   try {
-    await execa('pnpm', ['next', 'build'], {
+    await execa('yarn', ['next', 'build'], {
       stdio: 'inherit',
     })
   } catch (err) {

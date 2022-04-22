@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { render, screen, within } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Home from 'src/pages'
 
 test('home page renders correctly', () => {
