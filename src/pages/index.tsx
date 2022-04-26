@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               <PasswordField />
             </Stack>
             <HStack justify='space-between'>
-              <Checkbox defaultIsChecked>Remember me</Checkbox>
+              <Checkbox defaultChecked>Remember me</Checkbox>
               <Button variant='link' colorScheme='blue' size='sm'>
                 Forgot password?
               </Button>
